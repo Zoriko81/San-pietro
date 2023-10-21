@@ -1,0 +1,322 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 90% 5% ;
+}
+
+#content {
+    grid-column: 2 / 2;
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(font/Pacifico-Regular.ttf);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1, h2, h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+}
+
+
+/* Barre menu*/
+header {
+    background-color: #990000;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#titre {
+    padding-left: 30px;
+}
+
+header a {
+    font-size: 1.5em;
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Accueil */
+#accueil {
+    background-image: url("img/pizza-2810589_1920.jpg");
+    min-height: 700px;
+    width: 100%;
+    animation: fadeInAnimation ease 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#accueil h1 {
+    font-size: 4em;
+}
+
+.boutton {
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 30%;
+    height: 30%;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: #990000;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.boutton:hover {
+    background-color: white;
+    color: #990000;
+    transform: scale(1.3);
+}
+
+
+/* Notre carte */
+#carte h2 {
+    color:#0c9e0c;
+    font-size: 2.5em;
+}
+
+#carte h3 {
+    color:#0c9e0c;
+    font-size: 1.5em;
+}
+
+#carte {
+    border: 2px solid black;
+}
+
+.plats {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 70px 0;
+}
+
+.plats section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    margin: 10px 0 30px 0;
+    font-size: 1.5em;
+}
+
+.plats img {
+    width: 80%;
+    height: 80%;
+}
+
+.plats img:hover {
+    rotate: 10deg;
+    transform: scale(0.8);
+}
+
+
+/* Nos services */
+#services {
+    background-color: #990000;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation div {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: #5c0000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+#services img {
+    width: 400px;
+    height: 300px;
+}
+
+#services img:hover {
+    transform: scale(0.9);
+    border-radius: 5%;
+}
+
+
+/* Contact */
+#contact {
+    border: 2px solid black;
+}
+
+#contact h2 {
+    color:#0c9e0c;
+    font-size: 2.5em;
+}
+
+#colonnes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+}
+
+#colonnes section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    color: #0c9e0c;
+}
+
+.ligne p, .ligne a {
+    padding-left: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.ligne a {
+    text-decoration: none;
+    color: #0c9e0c;
+}
+
+#map img {
+    height: 300px;
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    background-color: #990000;
+    border: 1px solid black;
+    min-height: 100px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .boutton {
+        font-size: 1em;
+    }
+
+    #accueil h1 {
+        font-size: 3em;
+    }
+
+    #titre {
+        margin-left: 20px;
+    }
+
+    .plats {
+        flex-wrap: wrap;
+    }
+
+    #content {
+        grid-column: 1 / 4;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .boutton {
+        font-size: 1em;
+    }
+
+    #accueil h1 {
+        font-size: 3em;
+    }
+
+    #titre {
+        margin: auto;
+    }
+
+    #services img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .presentation div {
+        width: 200px;
+        height: 150px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .plats {
+        flex-wrap: wrap;
+    }
+
+    #content {
+        grid-column: 1 / 4;
+    }
+
+    #colonnes {
+        flex-wrap: wrap;
+    }
+
+    #colonnes section {
+        margin: 30px 0 0 0;
+    }
+
+}
