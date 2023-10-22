@@ -63,10 +63,10 @@ header a {
     color: white;
     padding-right: 30px;
     text-decoration: none;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
 }
 
 header a:hover {
-    font-weight: bold;
     text-decoration: underline;
 }
 
