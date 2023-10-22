@@ -189,6 +189,10 @@ header a:hover {
     font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
 }
 
+.presentation div p{
+    padding: 2em;
+}
+
 .presentation section {
     display: flex;
     flex-direction: row;
