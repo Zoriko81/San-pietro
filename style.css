@@ -21,6 +21,11 @@ body {
     src: url(font/Pacifico-Regular.ttf);
 }
 
+@font-face {
+    font-family: Liberation;
+    src: url(font/LiberationSans-Regular.ttf);
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -136,6 +141,7 @@ header a:hover {
     line-height: 1.7;
     margin: 10px 0 30px 0;
     font-size: 1.5em;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .plats img {
@@ -178,6 +184,7 @@ header a:hover {
     font-size: 1.3em;
     align-items: center;
     justify-content: center;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .presentation section {
@@ -227,6 +234,7 @@ header a:hover {
     align-items: center;
     font-size: 1.3em;
     color: #0c9e0c;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .ligne p, .ligne a {
@@ -243,6 +251,7 @@ header a:hover {
 #map img {
     height: 300px;
 }
+
 
 
 /* Footer */
