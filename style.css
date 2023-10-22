@@ -90,7 +90,7 @@ header a:hover {
 }
 
 .boutton {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50px;
     width: 30%;
     height: 50px;
@@ -161,6 +161,8 @@ header a:hover {
     background-color: #990000;
     min-height: 100px;
     overflow: hidden;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 #services h2 {
@@ -258,7 +260,8 @@ header a:hover {
 footer {
     color: white;
     background-color: #990000;
-    border: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     min-height: 100px;
     font-size: 1.5em;
     display: flex;
