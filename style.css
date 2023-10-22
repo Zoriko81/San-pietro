@@ -69,7 +69,7 @@ header a:hover {
 /* Accueil */
 #accueil {
     background-image: url("img/pizza-2810589_1920.jpg");
-    min-height: 700px;
+    min-height: 800px;
     width: 100%;
     animation: fadeInAnimation ease 1s;
     display: flex;
@@ -88,15 +88,16 @@ header a:hover {
     border: 1px solid black;
     border-radius: 50px;
     width: 30%;
-    height: 30%;
+    height: 50px;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     background-color: #990000;
     padding: 10px;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .boutton:hover {
@@ -119,6 +120,7 @@ header a:hover {
 
 #carte {
     border: 2px solid black;
+    padding-top: 20px;
 }
 
 .plats {
@@ -131,7 +133,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.5;
+    line-height: 1.7;
     margin: 10px 0 30px 0;
     font-size: 1.5em;
 }
@@ -139,6 +141,7 @@ header a:hover {
 .plats img {
     width: 80%;
     height: 80%;
+    margin-bottom: 20px;
 }
 
 .plats img:hover {
