@@ -277,7 +277,7 @@ footer {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
 
     .boutton {
         font-size: 1em;
@@ -289,6 +289,11 @@ footer {
 
     #titre {
         margin: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #services img {
