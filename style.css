@@ -26,6 +26,11 @@ body {
     src: url(font/LiberationSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: Liberation-bold;
+    src: url(font/LiberationSans-Bold.ttf);
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -103,6 +108,8 @@ header a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Liberation-bold', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+
 }
 
 .boutton:hover {
